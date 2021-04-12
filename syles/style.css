@@ -5,12 +5,15 @@
 }
 
 body {
+    overflow: hidden;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
     width: 100%;
-    position: relative;
+    /* position: relative; */
+    display: grid;
+    grid-template:1fr 1fr 4rem /1fr ;
 }
 
 ul li {
@@ -40,7 +43,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+#page--body {
+    margin-bottom: 6rem;
+}
 .nav--list-item .mydp{
     width: 32px;
     height: 32px;
@@ -165,67 +170,6 @@ a:hover {
     color: blue;
     margin-right: 0.5rem;
 }
-/* 
-.page--footer {
-    display: flex;
-    flex-direction:column;
-    background: #f2f2f2;
-    color: rgba(0,0,0,.54);
-    margin-top: 3rem;
-     font-size: 15px;
-}
-.page--footer .page--footer-country {
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-    font-size: 15px;
-    color: rgba(0,0,0,.54);
-}
-.agpe--footer-advert img {
-    width: 12.25px;
-    height: 12px;
-}
-.page--footer-menu {
-    display: flex;
-    padding: 0 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.page--footer-menu ul li {
-    padding: 15px;
-    
-}
-.page--footer-menu a{
-     color: rgba(0,0,0,.54);
-    
-}
-
-.left--footer-menu{
-    justify-content: flex-start;
-    min-width: 30%;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.right--footer-menu{
-    justify-content: flex-end;
-    min-width: 30%;
-    order: 3;
-    
-}
-
-.page--footer-advert {
-  order: 0;
-    width: 100%;
-    justify-content: center;
-} */
-
-
-/* New styles */
 
 .page--footer {
     flex-shrink: 0;
@@ -295,8 +239,4 @@ a.f-anchor {
     order: 3;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
